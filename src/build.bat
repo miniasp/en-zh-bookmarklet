@@ -1,0 +1,1 @@
+@"C:\Program Files (x86)\Microsoft\Microsoft Ajax Minifier\AjaxMin.exe" bookmarklet.js -out ..\dist\bookmarklet.min.js
