@@ -1,0 +1,23 @@
+{
+  "name": "en-zh-bookmarklet",
+  "version": "1.0.0",
+  "description": "中、英文網頁切換的瀏覽器書籤小工具",
+  "main": "index.js",
+  "scripts": {
+    "build": "uglifyjs --compress --mangle -o dist/bookmarklet.min.js src/bookmarklet.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miniasp/en-zh-bookmarklet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miniasp/en-zh-bookmarklet/issues"
+  },
+  "homepage": "https://github.com/miniasp/en-zh-bookmarklet#readme",
+  "dependencies": {
+    "uglify-js": "^3.0.28"
+  }
+}
