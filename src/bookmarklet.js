@@ -1,6 +1,13 @@
 (function(){
     var idx;
 
+    if(location.href.indexOf('//getbootstrap.com/docs/3.3/')>=0){
+        void(location.href = location.href.replace(/getbootstrap\.com\/docs\/3\.3\//i, 'v3.bootcss.com/'));
+    }
+    if(location.href.indexOf('//v3.bootcss.com/')>=0){
+        void(location.href = location.href.replace(/v3\.bootcss\.com\//i, 'getbootstrap.com/docs/3.3/'));
+    }
+    
     if(location.hostname.indexOf('google.com') >= 0) {
         // https://developers.google.com/web/fundamentals/?hl=en-us
         idx = location.search.indexOf('hl=');
