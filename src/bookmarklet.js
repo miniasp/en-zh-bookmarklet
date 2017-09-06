@@ -1,6 +1,10 @@
 (function(){
     var idx;
 
+    if(location.href==='https://getbootstrap.com/'){
+        void(location.href = 'http://bootstrap.hexschool.com');
+    }
+    
     if(location.href.indexOf('//getbootstrap.com/docs/3.3/')>=0){
         void(location.href = location.href.replace(/getbootstrap\.com\/docs\/3\.3\//i, 'v3.bootcss.com/'));
     }
@@ -8,6 +12,20 @@
         void(location.href = location.href.replace(/v3\.bootcss\.com\//i, 'getbootstrap.com/docs/3.3/'));
     }
     
+    if(location.href.indexOf('//bootstrap.hexschool.com/')>=0){
+        void(location.href = location.href.replace(/bootstrap\.hexschool\.com/i, 'getbootstrap.com'));
+    }
+    if(location.href.indexOf('//getbootstrap.com/docs/4.0/')>=0){
+        void(location.href = location.href.replace(/http(s?)\:\/\/getbootstrap\.com/i, 'http://bootstrap.hexschool.com'));
+    }
+    
+    if(location.href.indexOf('//angular.io/')>=0){
+        void(location.href = location.href.replace(/angular\.io/i, 'angular.cn'));
+    }
+    if(location.href.indexOf('//angular.cn/')>=0){
+        void(location.href = location.href.replace(/angular\.cn/i, 'angular.io'));
+    }
+
     if(location.hostname.indexOf('google.com') >= 0) {
         // https://developers.google.com/web/fundamentals/?hl=en-us
         idx = location.search.indexOf('hl=');
