@@ -26,6 +26,14 @@
         void(location.href = location.href.replace(/angular\.cn/i, 'angular.io'));
     }
 
+    if (location.href.indexOf('//www.jquery123.com/') >= 0) {
+        void(location.href = location.href.replace(/www\.jquery123\.com/i, 'api.jquery.com'));
+    }
+    if (location.href.indexOf('//api.jquery.com/') >= 0) {
+        void(location.href = location.href.replace(/http(s?)\:\/\/api\.jquery\.com/i, 'http://www.jquery123.com'));
+    }
+
+
     if (location.hostname.indexOf('google.com') >= 0) {
         // https://developers.google.com/web/fundamentals/?hl=en-us
         idx = location.search.indexOf('hl=');
