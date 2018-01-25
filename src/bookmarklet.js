@@ -36,6 +36,12 @@
         void(location.href = ln.replace(/http(s?)\:\/\/api\.jquery\.com/i, 'http://www.jquery123.com'));
     }
 
+    if (ln.indexOf('//reactivex.io/rxjs/') >= 0) {
+        void(location.href = ln.replace(/reactivex\.io\/rxjs/i, 'cn.rx.js.org'));
+    }
+    if (ln.indexOf('//cn.rx.js.org/') >= 0) {
+        void(location.href = ln.replace(/cn\.rx\.js\.org/i, 'reactivex.io/rxjs'));
+    }
 
     if (hn.indexOf('google.com') >= 0) {
         // https://developers.google.com/web/fundamentals/?hl=en-us
