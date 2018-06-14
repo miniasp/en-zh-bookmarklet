@@ -4,7 +4,7 @@
         ln = location.href,
         pn = location.pathname;
 
-    if (ln === 'https://getbootstrap.com/') {
+    if (ln === 'https://getbootstrap.com/' || ln === 'http://getbootstrap.com/') {
         void(location.href = 'http://bootstrap.hexschool.com');
     }
 
