@@ -43,6 +43,13 @@
         void(location.href = ln.replace(/cn\.rx\.js\.org/i, 'reactivex.io/rxjs'));
     }
 
+    if (ln.indexOf('//vuejs.org/') >= 0) {
+        void(location.href = ln.replace(/vuejs\.org/i, 'cn.vuejs.org'));
+    }
+    if (ln.indexOf('//cn.vuejs.org/') >= 0) {
+        void(location.href = ln.replace(/cn\.vuejs\.org/i, 'vuejs.org'));
+    }
+
     if (hn.indexOf('google.com') >= 0) {
         // https://developers.google.com/web/fundamentals/?hl=en-us
         idx = location.search.indexOf('hl=');
