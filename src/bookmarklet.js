@@ -40,7 +40,11 @@
         void(location.href = ln.replace(/reactivex\.io\/rxjs/i, 'cn.rx.js.org'));
     }
     if (ln.indexOf('//cn.rx.js.org/') >= 0) {
-        void(location.href = ln.replace(/cn\.rx\.js\.org/i, 'reactivex.io/rxjs'));
+        if (ln == 'https://cn.rx.js.org/') {
+            location.href = 'http://reactivex.io/rxjs/manual/index.html';
+            return;
+        }
+        void(location.href = ln.replace(/https:\/\/cn\.rx\.js\.org/i, 'http://reactivex.io/rxjs'));
     }
 
     if (ln.indexOf('//vuejs.org/') >= 0) {
