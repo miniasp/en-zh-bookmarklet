@@ -23,10 +23,10 @@
     }
 
     if (ln.indexOf('//angular.io/') >= 0) {
-        void(location.href = ln.replace(/angular\.io/i, 'angular.cn'));
+        void(location.href = ln.replace(/angular\.io/i, 'angular.tw'));
     }
-    if (ln.indexOf('//angular.cn/') >= 0) {
-        void(location.href = ln.replace(/angular\.cn/i, 'angular.io'));
+    if (ln.indexOf('//angular.tw/') >= 0) {
+        void(location.href = ln.replace(/angular\.tw/i, 'angular.io'));
     }
 
     if (ln.indexOf('//www.jquery123.com/') >= 0) {
