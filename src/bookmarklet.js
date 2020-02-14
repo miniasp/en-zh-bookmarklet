@@ -71,7 +71,7 @@
             }
         }
     }
-    
+
     if (hn.indexOf('mozilla.org') >= 0) {
         if (pn.search(/^\/(en)(-\w\w)?(\/)?(.*)/i) >= 0) {
             void(location.pathname = pn.replace(/^\/en(-\w\w)?\//i, '/zh-tw/'));
@@ -80,7 +80,7 @@
         }
     }
 
-    if (hn.indexOf('microsoft.com') >= 0 || hn.indexOf('visualstudio.com') >= 0) {
+    if (hn.indexOf('microsoft.com') >= 0 || hn.indexOf('office.com') >= 0 || hn.indexOf('visualstudio.com') >= 0) {
         // http://support.microsoft.com/kb/2951262
         idx = pn.search(/^\/kb\/\d+/i);
         if (hn.indexOf('support.microsoft.com') >= 0 && idx >= 0) {
