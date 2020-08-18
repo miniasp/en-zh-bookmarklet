@@ -30,6 +30,8 @@
   * 注意: 由於 [RxJS 官網文件](http://reactivex.io/rxjs/) 近期改版，預設連到首頁就會轉向到新網站，所以從簡體網站首頁轉回英文版時，我會另外轉向到 [http://reactivex.io/rxjs/manual/index.html](http://reactivex.io/rxjs/manual/index.html) 避免連到無法翻譯的頁面。
 * 支援 Vue.js 官網中英文文件翻譯轉換
   * 針對 `vuejs.org` 與 `cn.vuejs.org` 網站進行切換 (簡體中文翻譯)
+* 支援 Kubernetes 官網中英文文件翻譯轉換
+  * 針對 `kubernetes.io/` 與 `kubernetes.io/zh/` 進行切換 (簡體中文翻譯)
 
 ## 安裝方式
 
@@ -43,7 +45,7 @@
 3. 請你手動修改這個 **中-英** 的超連結，並將超連結改成以下程式碼即可！
 
 ```js
-javascript:!function(){var o,e=location.hostname.toLowerCase(),a=location.href,c=location.pathname;if("https://getbootstrap.com/"!==a&&"http://getbootstrap.com/"!==a||(location.href="http://bootstrap.hexschool.com"),a.indexOf("//getbootstrap.com/docs/3.3/")>=0&&(location.href=a.replace(/getbootstrap\.com\/docs\/3\.3\//i,"v3.bootcss.com/")),a.indexOf("//v3.bootcss.com/")>=0&&(location.href=a.replace(/v3\.bootcss\.com\//i,"getbootstrap.com/docs/3.3/")),a.indexOf("//bootstrap.hexschool.com/")>=0&&(location.href=a.replace(/bootstrap\.hexschool\.com/i,"getbootstrap.com")),a.indexOf("//getbootstrap.com/docs/4.0/")>=0&&(location.href=a.replace(/http(s?)\:\/\/getbootstrap\.com/i,"http://bootstrap.hexschool.com")),a.indexOf("//angular.io/")>=0&&(location.href=a.replace(/angular\.io/i,"angular.tw")),a.indexOf("//angular.tw/")>=0&&(location.href=a.replace(/angular\.tw/i,"angular.io")),a.indexOf("//www.jquery123.com/")>=0&&(location.href=a.replace(/www\.jquery123\.com/i,"api.jquery.com")),a.indexOf("//api.jquery.com/")>=0&&(location.href=a.replace(/http(s?)\:\/\/api\.jquery\.com/i,"http://www.jquery123.com")),a.indexOf("//reactivex.io/rxjs/")>=0&&(location.href=a.replace(/reactivex\.io\/rxjs/i,"cn.rx.js.org")),a.indexOf("//cn.rx.js.org/")>=0){if("https://cn.rx.js.org/"==a)return void(location.href="http://reactivex.io/rxjs/manual/index.html");location.href=a.replace(/https:\/\/cn\.rx\.js\.org/i,"http://reactivex.io/rxjs")}a.indexOf("//vuejs.org/")>=0&&(location.href=a.replace(/vuejs\.org/i,"cn.vuejs.org")),a.indexOf("//cn.vuejs.org/")>=0&&(location.href=a.replace(/cn\.vuejs\.org/i,"vuejs.org")),e.indexOf("google.com")>=0&&(-1==(o=location.search.indexOf("hl="))?0==location.search.indexOf("?")?location.search+="&hl=en-us":location.search+="?hl=en-us":"en"==location.search.substr(o+3,2)?location.search=location.search.replace(/hl=(\w\w)(-\w+)?/i,"hl=zh-Hant"):location.search=location.search.replace(/hl=(\w\w)(-\w+)?/i,"hl=en-us")),e.indexOf("mozilla.org")>=0&&(c.search(/^\/(en)(-\w\w)?(\/)?(.*)/i)>=0?location.pathname=c.replace(/^\/en(-\w\w)?\//i,"/zh-tw/"):location.pathname=c.replace(/^\/\w\w(-\w\w)?\//i,"/en-us/")),(e.indexOf("microsoft.com")>=0||e.indexOf("office.com")>=0||e.indexOf("visualstudio.com")>=0)&&(o=c.search(/^\/kb\/\d+/i),e.indexOf("support.microsoft.com")>=0&&o>=0?c.search(/^\/kb\/\d+\/?$/i)>=0?location.pathname=c.replace(/^(\/kb\/\d+)(\/)?(\w\w-\w\w)?$/i,"$1/en-us"):c.search(/^\/kb\/\d+\/(\w\w)(-\w\w)?/i)>=0?c.search(/^(\/kb\/\d+\/)en(-\w\w)?$/i)>=0?location.pathname=c.replace(/^(\/kb\/\d+\/)en(-\w\w)?$/i,"$1zh-tw"):location.pathname=c.replace(/^(\/kb\/\d+\/)\w\w(-\w\w)?$/i,"$1en-us"):location.pathname=c.replace(/^(\/kb\/\d+)(\/\w\w-\w\w)?$/i,"$1/en-us"):c.search(/^\/(\w\w)(-\w\w)?\/?/i)>=0&&(c.search(/^\/(en)(-\w\w)?(\/)?(.*)/i)>=0?location.pathname=c.replace(/^\/(en)(-\w\w)?(\/)?(.*)/i,"/zh-tw$3$4"):location.pathname=c.replace(/^\/(\w\w)(-\w\w)?(\/)?(.*)/i,"/en-us$3$4")))}();
+javascript:!function(){var o,e=location.hostname.toLowerCase(),a=location.href,c=location.pathname;if("https://getbootstrap.com/"!==a&&"http://getbootstrap.com/"!==a||(location.href="http://bootstrap.hexschool.com"),0<=a.indexOf("//getbootstrap.com/docs/3.3/")&&(location.href=a.replace(/getbootstrap\.com\/docs\/3\.3\//i,"v3.bootcss.com/")),0<=a.indexOf("//v3.bootcss.com/")&&(location.href=a.replace(/v3\.bootcss\.com\//i,"getbootstrap.com/docs/3.3/")),0<=a.indexOf("//bootstrap.hexschool.com/")&&(location.href=a.replace(/bootstrap\.hexschool\.com/i,"getbootstrap.com")),0<=a.indexOf("//getbootstrap.com/docs/4.0/")&&(location.href=a.replace(/http(s?)\:\/\/getbootstrap\.com/i,"http://bootstrap.hexschool.com")),0<=a.indexOf("//angular.io/")&&(location.href=a.replace(/angular\.io/i,"angular.tw")),0<=a.indexOf("//angular.tw/")&&(location.href=a.replace(/angular\.tw/i,"angular.io")),0<=a.indexOf("//www.jquery123.com/")&&(location.href=a.replace(/www\.jquery123\.com/i,"api.jquery.com")),0<=a.indexOf("//api.jquery.com/")&&(location.href=a.replace(/http(s?)\:\/\/api\.jquery\.com/i,"http://www.jquery123.com")),0<=a.indexOf("//reactivex.io/rxjs/")&&(location.href=a.replace(/reactivex\.io\/rxjs/i,"cn.rx.js.org")),0<=a.indexOf("//cn.rx.js.org/")){if("https://cn.rx.js.org/"==a)return location.href="http://reactivex.io/rxjs/manual/index.html";location.href=a.replace(/https:\/\/cn\.rx\.js\.org/i,"http://reactivex.io/rxjs")}0<=a.indexOf("//vuejs.org/")&&(location.href=a.replace(/vuejs\.org/i,"cn.vuejs.org")),0<=a.indexOf("//cn.vuejs.org/")&&(location.href=a.replace(/cn\.vuejs\.org/i,"vuejs.org")),0<=e.indexOf("google.com")&&(-1==(o=location.search.indexOf("hl="))?0==location.search.indexOf("?")?location.search+="&hl=en-us":location.search+="?hl=en-us":"en"==location.search.substr(o+3,2)?location.search=location.search.replace(/hl=(\w\w)(-\w+)?/i,"hl=zh-Hant"):location.search=location.search.replace(/hl=(\w\w)(-\w+)?/i,"hl=en-us")),0<=e.indexOf("mozilla.org")&&(0<=c.search(/^\/(en)(-\w\w)?(\/)?(.*)/i)?location.pathname=c.replace(/^\/en(-\w\w)?\//i,"/zh-tw/"):location.pathname=c.replace(/^\/\w\w(-\w\w)?\//i,"/en-us/")),0<=e.indexOf("kubernetes.io")&&(0<=c.search(/^(?=\/zh\/).{4}/)?location.pathname=c.replace(/^(?=\/zh\/).{4}/i,"/"):location.pathname=c.replace(/^((?!\/zh\/).{0,4})/i,"/zh$1")),(0<=e.indexOf("microsoft.com")||0<=e.indexOf("office.com")||0<=e.indexOf("visualstudio.com"))&&(o=c.search(/^\/kb\/\d+/i),0<=e.indexOf("support.microsoft.com")&&0<=o?0<=c.search(/^\/kb\/\d+\/?$/i)?location.pathname=c.replace(/^(\/kb\/\d+)(\/)?(\w\w-\w\w)?$/i,"$1/en-us"):0<=c.search(/^\/kb\/\d+\/(\w\w)(-\w\w)?/i)?0<=c.search(/^(\/kb\/\d+\/)en(-\w\w)?$/i)?location.pathname=c.replace(/^(\/kb\/\d+\/)en(-\w\w)?$/i,"$1zh-tw"):location.pathname=c.replace(/^(\/kb\/\d+\/)\w\w(-\w\w)?$/i,"$1en-us"):location.pathname=c.replace(/^(\/kb\/\d+)(\/\w\w-\w\w)?$/i,"$1/en-us"):0<=c.search(/^\/(\w\w)(-\w\w)?\/?/i)&&(0<=c.search(/^\/(en)(-\w\w)?(\/)?(.*)/i)?location.pathname=c.replace(/^\/(en)(-\w\w)?(\/)?(.*)/i,"/zh-tw$3$4"):location.pathname=c.replace(/^\/(\w\w)(-\w\w)?(\/)?(.*)/i,"/en-us$3$4")))}();
 ```
 
 ## 使用方式與範例
@@ -75,6 +77,29 @@ javascript:!function(){var o,e=location.hostname.toLowerCase(),a=location.href,c
 9. JavaScript | MDN
    * 先連到 https://developer.mozilla.org/en-US/docs/Web/JavaScript (顯示英文)
    * 此時點擊**書籤工具列**或**我的最愛列**上的**中-英**書籤連結，這時就會自動切換到繁體中文文件
+10. Kubernetes
+   * 先連到 https://kubernetes.io/ (顯示英文)
+   * 此時點擊**書籤工具列**或**我的最愛列**上的**中-英**書籤連結，這時就會自動切換到繁體中文文件
+
+## 貢獻方式
+
+* 準備開發環境
+
+   ```sh
+   git clone https://github.com/miniasp/en-zh-bookmarklet.git
+   cd en-zh-bookmarklet
+   npm install
+   ```
+
+* 修改 `src\bookmarklet.js` 主程式並加入中英轉換邏輯
+
+* 建置專案並產生 `dist\bookmarklet.min.js` 檔案
+
+   ```sh
+   npm run build
+   ```
+
+* 將 `dist\bookmarklet.min.js` 檔案內容複製到 `README.md` 的 `安裝方式` 章節的程式碼中！
 
 ## 注意事項
 
