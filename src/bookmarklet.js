@@ -22,6 +22,13 @@
         void(location.href = ln.replace(/http(s?)\:\/\/getbootstrap\.com/i, 'http://bootstrap.hexschool.com'));
     }
 
+    if (ln.indexOf('//doc.rust-lang.org/stable/book/') >= 0) {
+        void(location.href = ln.replace(/\/\/doc\.rust\-lang\.org\/stable\/book\//i, '//rust-lang.tw/book-tw/'));
+    }
+    if (ln.indexOf('//rust-lang.tw/book-tw/') >= 0) {
+        void(location.href = ln.replace(/\/\/rust\-lang\.tw\/book\-tw\//i, '//doc.rust-lang.org/stable/book/'));
+    }
+
     if (ln.indexOf('//angular.io/') >= 0) {
         void(location.href = ln.replace(/angular\.io/i, 'angular.tw'));
     }
