@@ -22,7 +22,8 @@
 * 支援 Bootstrap 3 中英文文件翻譯轉換
   * 針對 `getbootstrap.com` 與 `v3.bootcss.com` 網站進行切換 (簡體中文翻譯)
 * 支援 Angular 官網中英文文件翻譯轉換
-  * 針對 `angular.io` 與 `angular.cn` 網站進行切換 (簡體中文翻譯)
+  * 針對 `angular.io` 與 `angular.tw` 網站進行切換
+  * 針對 `material.angular.io` 與 `material.angular.tw` 網站進行切換
 * 支援 jQuery 官網 API 中英文文件翻譯轉換
   * 針對 `api.jquery.com` 與 `www.jquery123.com` 網站進行切換 (簡體中文翻譯)
 * 支援 RxJS 官網 API 中英文文件翻譯轉換
@@ -47,43 +48,43 @@
 3. 請你手動修改這個 **中-英** 的超連結，並將超連結改成以下程式碼即可！
 
 ```js
-javascript:!function(){var o,e=location.hostname.toLowerCase(),a=location.href,t=location.pathname;if("https://getbootstrap.com/"!==a&&"http://getbootstrap.com/"!==a||(location.href="http://bootstrap.hexschool.com"),0<=a.indexOf("//getbootstrap.com/docs/3.3/")&&(location.href=a.replace(/getbootstrap\.com\/docs\/3\.3\//i,"v3.bootcss.com/")),0<=a.indexOf("//v3.bootcss.com/")&&(location.href=a.replace(/v3\.bootcss\.com\//i,"getbootstrap.com/docs/3.3/")),0<=a.indexOf("//bootstrap.hexschool.com/")&&(location.href=a.replace(/bootstrap\.hexschool\.com/i,"getbootstrap.com")),0<=a.indexOf("//getbootstrap.com/docs/4.0/")&&(location.href=a.replace(/http(s?)\:\/\/getbootstrap\.com/i,"http://bootstrap.hexschool.com")),0<=a.indexOf("//doc.rust-lang.org/stable/book/")&&(location.href=a.replace(/\/\/doc\.rust\-lang\.org\/stable\/book\//i,"//rust-lang.tw/book-tw/")),0<=a.indexOf("//rust-lang.tw/book-tw/")&&(location.href=a.replace(/\/\/rust\-lang\.tw\/book\-tw\//i,"//doc.rust-lang.org/stable/book/")),0<=a.indexOf("//angular.io/")&&(location.href=a.replace(/angular\.io/i,"angular.tw")),0<=a.indexOf("//angular.tw/")&&(location.href=a.replace(/angular\.tw/i,"angular.io")),0<=a.indexOf("//www.jquery123.com/")&&(location.href=a.replace(/www\.jquery123\.com/i,"api.jquery.com")),0<=a.indexOf("//api.jquery.com/")&&(location.href=a.replace(/http(s?)\:\/\/api\.jquery\.com/i,"http://www.jquery123.com")),0<=a.indexOf("//reactivex.io/rxjs/")&&(location.href=a.replace(/reactivex\.io\/rxjs/i,"cn.rx.js.org")),0<=a.indexOf("//cn.rx.js.org/")){if("https://cn.rx.js.org/"==a)return location.href="http://reactivex.io/rxjs/manual/index.html";location.href=a.replace(/https:\/\/cn\.rx\.js\.org/i,"http://reactivex.io/rxjs")}0<=a.indexOf("//vuejs.org/")&&(location.href=a.replace(/vuejs\.org/i,"cn.vuejs.org")),0<=a.indexOf("//cn.vuejs.org/")&&(location.href=a.replace(/cn\.vuejs\.org/i,"vuejs.org")),0<=e.indexOf("google.com")&&(-1==(o=location.search.indexOf("hl="))?0==location.search.indexOf("?")?location.search+="&hl=en-us":location.search+="?hl=en-us":"en"==location.search.substr(o+3,2)?location.search=location.search.replace(/hl=(\w\w)(-\w+)?/i,"hl=zh-Hant"):location.search=location.search.replace(/hl=(\w\w)(-\w+)?/i,"hl=en-us")),0<=e.indexOf("mozilla.org")&&(0<=t.search(/^\/(en)(-\w\w)?(\/)?(.*)/i)?location.pathname=t.replace(/^\/en(-\w\w)?\//i,"/zh-tw/"):location.pathname=t.replace(/^\/\w\w(-\w\w)?\//i,"/en-us/")),0<=e.indexOf("kubernetes.io")&&(0<=t.search(/^(?=\/zh\/).{4}/)?location.pathname=t.replace(/^(?=\/zh\/).{4}/i,"/"):location.pathname=t.replace(/^((?!\/zh\/).{0,4})/i,"/zh$1")),(0<=e.indexOf("microsoft.com")||0<=e.indexOf("office.com")||0<=e.indexOf("visualstudio.com"))&&(o=t.search(/^\/kb\/\d+/i),0<=e.indexOf("support.microsoft.com")&&0<=o?0<=t.search(/^\/kb\/\d+\/?$/i)?location.pathname=t.replace(/^(\/kb\/\d+)(\/)?(\w\w-\w\w)?$/i,"$1/en-us"):0<=t.search(/^\/kb\/\d+\/(\w\w)(-\w\w)?/i)?0<=t.search(/^(\/kb\/\d+\/)en(-\w\w)?$/i)?location.pathname=t.replace(/^(\/kb\/\d+\/)en(-\w\w)?$/i,"$1zh-tw"):location.pathname=t.replace(/^(\/kb\/\d+\/)\w\w(-\w\w)?$/i,"$1en-us"):location.pathname=t.replace(/^(\/kb\/\d+)(\/\w\w-\w\w)?$/i,"$1/en-us"):0<=t.search(/^\/(\w\w)(-\w\w)?\/?/i)&&(0<=t.search(/^\/(en)(-\w\w)?(\/)?(.*)/i)?location.pathname=t.replace(/^\/(en)(-\w\w)?(\/)?(.*)/i,"/zh-tw$3$4"):location.pathname=t.replace(/^\/(\w\w)(-\w\w)?(\/)?(.*)/i,"/en-us$3$4")))}();
+javascript:!function(){var o,e=location.hostname.toLowerCase(),a=location.href,t=location.pathname;if("https://getbootstrap.com/"!==a&&"http://getbootstrap.com/"!==a||(location.href="http://bootstrap.hexschool.com"),a.indexOf("//getbootstrap.com/docs/3.3/")>=0&&(location.href=a.replace(/getbootstrap\.com\/docs\/3\.3\//i,"v3.bootcss.com/")),a.indexOf("//v3.bootcss.com/")>=0&&(location.href=a.replace(/v3\.bootcss\.com\//i,"getbootstrap.com/docs/3.3/")),a.indexOf("//bootstrap.hexschool.com/")>=0&&(location.href=a.replace(/bootstrap\.hexschool\.com/i,"getbootstrap.com")),a.indexOf("//getbootstrap.com/docs/4.0/")>=0&&(location.href=a.replace(/http(s?)\:\/\/getbootstrap\.com/i,"http://bootstrap.hexschool.com")),a.indexOf("//doc.rust-lang.org/stable/book/")>=0&&(location.href=a.replace(/\/\/doc\.rust\-lang\.org\/stable\/book\//i,"//rust-lang.tw/book-tw/")),a.indexOf("//rust-lang.tw/book-tw/")>=0&&(location.href=a.replace(/\/\/rust\-lang\.tw\/book\-tw\//i,"//doc.rust-lang.org/stable/book/")),a.indexOf("//angular.io/")>=0&&(location.href=a.replace(/angular\.io/i,"angular.tw")),a.indexOf("//angular.tw/")>=0&&(location.href=a.replace(/angular\.tw/i,"angular.io")),a.indexOf("//material.angular.io/")>=0&&(location.href=a.replace(/material.angular\.io/i,"material.angular.tw")),a.indexOf("//material.angular.tw/")>=0&&(location.href=a.replace(/material.angular\.tw/i,"material.angular.io")),a.indexOf("//www.jquery123.com/")>=0&&(location.href=a.replace(/www\.jquery123\.com/i,"api.jquery.com")),a.indexOf("//api.jquery.com/")>=0&&(location.href=a.replace(/http(s?)\:\/\/api\.jquery\.com/i,"http://www.jquery123.com")),a.indexOf("//reactivex.io/rxjs/")>=0&&(location.href=a.replace(/reactivex\.io\/rxjs/i,"cn.rx.js.org")),a.indexOf("//cn.rx.js.org/")>=0){if("https://cn.rx.js.org/"==a)return void(location.href="http://reactivex.io/rxjs/manual/index.html");location.href=a.replace(/https:\/\/cn\.rx\.js\.org/i,"http://reactivex.io/rxjs")}a.indexOf("//vuejs.org/")>=0&&(location.href=a.replace(/vuejs\.org/i,"cn.vuejs.org")),a.indexOf("//cn.vuejs.org/")>=0&&(location.href=a.replace(/cn\.vuejs\.org/i,"vuejs.org")),e.indexOf("google.com")>=0&&(-1==(o=location.search.indexOf("hl="))?0==location.search.indexOf("?")?location.search+="&hl=en-us":location.search+="?hl=en-us":"en"==location.search.substr(o+3,2)?location.search=location.search.replace(/hl=(\w\w)(-\w+)?/i,"hl=zh-Hant"):location.search=location.search.replace(/hl=(\w\w)(-\w+)?/i,"hl=en-us")),e.indexOf("mozilla.org")>=0&&(t.search(/^\/(en)(-\w\w)?(\/)?(.*)/i)>=0?location.pathname=t.replace(/^\/en(-\w\w)?\//i,"/zh-tw/"):location.pathname=t.replace(/^\/\w\w(-\w\w)?\//i,"/en-us/")),e.indexOf("kubernetes.io")>=0&&(t.search(/^(?=\/zh\/).{4}/)>=0?location.pathname=t.replace(/^(?=\/zh\/).{4}/i,"/"):location.pathname=t.replace(/^((?!\/zh\/).{0,4})/i,"/zh$1")),(e.indexOf("microsoft.com")>=0||e.indexOf("office.com")>=0||e.indexOf("visualstudio.com")>=0)&&(o=t.search(/^\/kb\/\d+/i),e.indexOf("support.microsoft.com")>=0&&o>=0?t.search(/^\/kb\/\d+\/?$/i)>=0?location.pathname=t.replace(/^(\/kb\/\d+)(\/)?(\w\w-\w\w)?$/i,"$1/en-us"):t.search(/^\/kb\/\d+\/(\w\w)(-\w\w)?/i)>=0?t.search(/^(\/kb\/\d+\/)en(-\w\w)?$/i)>=0?location.pathname=t.replace(/^(\/kb\/\d+\/)en(-\w\w)?$/i,"$1zh-tw"):location.pathname=t.replace(/^(\/kb\/\d+\/)\w\w(-\w\w)?$/i,"$1en-us"):location.pathname=t.replace(/^(\/kb\/\d+)(\/\w\w-\w\w)?$/i,"$1/en-us"):t.search(/^\/(\w\w)(-\w\w)?\/?/i)>=0&&(t.search(/^\/(en)(-\w\w)?(\/)?(.*)/i)>=0?location.pathname=t.replace(/^\/(en)(-\w\w)?(\/)?(.*)/i,"/zh-tw$3$4"):location.pathname=t.replace(/^\/(\w\w)(-\w\w)?(\/)?(.*)/i,"/en-us$3$4")))}();
 ```
 
 ## 使用方式與範例
 
 1. 微軟知識庫文件網站 (support.microsoft.com)
-   * 先連到 http://support.microsoft.com/kb/2951262 這個網址
+   * 先連到 <http://support.microsoft.com/kb/2951262> 這個網址
    * 此時點擊**書籤工具列**或**我的最愛列**上的**中-英**書籤連結，這時就會自動切換到英文介面(en-us)
 2. 微軟最有價值專家網站 (mvp.microsoft.com)
-   * 先連到 http://mvp.microsoft.com/en-us/mvp/Will%20Huang-4015686 這個網址
+   * 先連到 <http://mvp.microsoft.com/en-us/mvp/Will%20Huang-4015686> 這個網址
    * 此時點擊**書籤工具列**或**我的最愛列**上的**中-英**書籤連結，這時就會自動切換到中文介面(zh-tw)
 3. Microsoft Azure 文件中心 (azure.microsoft.com)
-   * 先連到 http://azure.microsoft.com/en-us/documentation/ 這個網址
+   * 先連到 <http://azure.microsoft.com/en-us/documentation/> 這個網址
    * 此時點擊**書籤工具列**或**我的最愛列**上的**中-英**書籤連結，這時就會自動切換到中文(zh-tw)
 4. 微軟 MSDN Library ( msdn.microsoft.com )
-   * 先連到 http://msdn.microsoft.com/ja-jp/library/system.drawing.color.aspx (日文)
+   * 先連到 <http://msdn.microsoft.com/ja-jp/library/system.drawing.color.aspx> (日文)
    * 此時點擊**書籤工具列**或**我的最愛列**上的**中-英**書籤連結，這時就會自動切換到英文文介面(en-us)
 5. Web Fundamentals — Google Developers
-   * 先連到 https://developers.google.com/web/fundamentals/ (預設顯示中文)
+   * 先連到 <https://developers.google.com/web/fundamentals/> (預設顯示中文)
    * 此時點擊**書籤工具列**或**我的最愛列**上的**中-英**書籤連結，這時就會自動切換到英文文介面(en-us)
 6. Angular Official Website
-   * 先連到 https://angular.io/ 任何一頁 (顯示英文)
+   * 先連到 <https://angular.io/> 任何一頁 (顯示英文)
    * 此時點擊**書籤工具列**或**我的最愛列**上的**中-英**書籤連結，這時就會自動切換到簡體中文文件
 7. Bootstrap · The world's most popular mobile-first and responsive front-end framework.
-   * 先連到 http://getbootstrap.com/ (顯示英文)
+   * 先連到 <http://getbootstrap.com/> (顯示英文)
    * 此時點擊**書籤工具列**或**我的最愛列**上的**中-英**書籤連結，這時就會自動切換到繁體中文文件
 8. RxJS · The ReactiveX library for JavaScript.
-   * 先連到 http://reactivex.io/rxjs/ (顯示英文)
+   * 先連到 <http://reactivex.io/rxjs/> (顯示英文)
    * 此時點擊**書籤工具列**或**我的最愛列**上的**中-英**書籤連結，這時就會自動切換到繁體中文文件
 9. JavaScript | MDN
-   * 先連到 https://developer.mozilla.org/en-US/docs/Web/JavaScript (顯示英文)
+   * 先連到 <https://developer.mozilla.org/en-US/docs/Web/JavaScript> (顯示英文)
    * 此時點擊**書籤工具列**或**我的最愛列**上的**中-英**書籤連結，這時就會自動切換到繁體中文文件
 10.Kubernetes
-   * 先連到 https://kubernetes.io/ (顯示英文)
+   * 先連到 <https://kubernetes.io/> (顯示英文)
    * 此時點擊**書籤工具列**或**我的最愛列**上的**中-英**書籤連結，這時就會自動切換到繁體中文文件
 11.The Rust Programming Language
-   * 先連到 https://doc.rust-lang.org/stable/book/ (顯示英文)
+   * 先連到 <https://doc.rust-lang.org/stable/book/> (顯示英文)
    * 此時點擊**書籤工具列**或**我的最愛列**上的**中-英**書籤連結，這時就會自動切換到繁體中文文件
 
 ## 貢獻方式

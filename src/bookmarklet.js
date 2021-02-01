@@ -36,6 +36,13 @@
         void(location.href = ln.replace(/angular\.tw/i, 'angular.io'));
     }
 
+    if (ln.indexOf('//material.angular.io/') >= 0) {
+        void(location.href = ln.replace(/material.angular\.io/i, 'material.angular.tw'));
+    }
+    if (ln.indexOf('//material.angular.tw/') >= 0) {
+        void(location.href = ln.replace(/material.angular\.tw/i, 'material.angular.io'));
+    }
+
     if (ln.indexOf('//www.jquery123.com/') >= 0) {
         void(location.href = ln.replace(/www\.jquery123\.com/i, 'api.jquery.com'));
     }
