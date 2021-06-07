@@ -29,6 +29,13 @@
         void(location.href = ln.replace(/\/\/rust\-lang\.tw\/book\-tw\//i, '//doc.rust-lang.org/stable/book/'));
     }
 
+    if (ln.indexOf('//www.autohotkey.com/docs/') >= 0) {
+        void(location.href = ln.replace(/\/\/www\.autohotkey\.com\/docs\//i, '//wyagd001.github.io/zh-cn/docs/'));
+    }
+    if (ln.indexOf('//wyagd001.github.io/zh-cn/docs/') >= 0) {
+        void(location.href = ln.replace(/\/\/wyagd001\.github\.io\/zh-cn\/docs\//i, '//www.autohotkey.com/docs/'));
+    }
+
     if (ln.indexOf('//angular.io/') >= 0) {
         void(location.href = ln.replace(/angular\.io/i, 'angular.tw'));
     }
