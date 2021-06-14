@@ -8,6 +8,14 @@
         void(location.href = 'http://bootstrap.hexschool.com');
     }
 
+    if (location.hostname == 'zh.wikipedia.org') {
+        document.querySelector("#p-lang > div > ul > li.interlanguage-link.interwiki-en > a").click();
+    }
+
+    if (location.hostname == 'en.wikipedia.org') {
+        document.querySelector("#p-lang > div > ul > li.interlanguage-link.interwiki-zh > a").click();
+    }
+
     if (ln.indexOf('//getbootstrap.com/docs/3.3/') >= 0) {
         void(location.href = ln.replace(/getbootstrap\.com\/docs\/3\.3\//i, 'v3.bootcss.com/'));
     }
