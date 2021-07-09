@@ -4,11 +4,14 @@
   "description": "中、英文網頁切換的瀏覽器書籤小工具",
   "main": "index.js",
   "scripts": {
-    "build": "uglifyjs --compress --mangle -o dist/bookmarklet.min.js src/bookmarklet.js "
+    "build": "npm run minify && npm run userscript",
+    "minify": "./node_modules/.bin/uglifyjs --compress --mangle -o dist/bookmarklet.min.js src/bookmarklet.js",
+    "userscript": "cat.exe src/bookmarklet.user.BEGIN.js src/bookmarklet.js src/bookmarklet.user.END.js > dist/bookmarklet.user.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/miniasp/en-zh-bookmarklet.git"
+  "dependencies": {},
+  "url": "git+https://github.com/miniasp/en-zh-bookmarklet.git"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +20,7 @@
     "url": "https://github.com/miniasp/en-zh-bookmarklet/issues"
   },
   "homepage": "https://github.com/miniasp/en-zh-bookmarklet#readme",
-  "dependencies": {
-    "uglify-js": "^3.0.28"
+  "devDependencies": {
+    "uglify-js": "^3.13.10"
   }
 }
